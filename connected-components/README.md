@@ -13,7 +13,7 @@ You can set *component number* of a node by using the function **UndirectedGraph
 
 Also, initially, component number of all nodes is -1 indicating that they're not in a component yet.
 
-**Hint**: You can use component number as a visited/explored array. If a node is not in a component yet (i.e., its component number is -1), it's not visited yet.
+**Hint/note**: You can use component number as a visited/explored array. If a node is not in a component yet (i.e., its component number is -1), it's not visited yet. And actually, that's what the given **DFS** function does.
 
 ## Input/Output
 
