@@ -26,7 +26,7 @@ Check the 2 pictures for an example.
 
 - **ConnectedComponents.h**: The only place you'll need to write code. You should complete a function there.
 - **UndirectedGraph.h**: A class for representing graphs. Also, you can use it to label the nodes with their component numbers.
-- **ExampleUsage.h**: To show you an example usage of *UndirectedGraph* class and how to set the components of each node. Also, shows you what your code should do to the graph. Call it and check the output.
+- **ExampleUsage.h**: To show you an example usage of *UndirectedGraph* class and how to set the component number of each node. Also, shows you what your code should do to the graph. Call it and check the output.
 - **inputExample.txt**: An example input. Same example used in *ExampleUsage.h*
 - **exampleGraph.png**: Picture of the graph used in the above example.
 - **exampleGraphAfterSettingComponentNumbers.png**: After setting component numbers. This is an example of how your code should set the component numbers of the nodes.
