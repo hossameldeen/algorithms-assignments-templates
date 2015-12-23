@@ -8,7 +8,9 @@
 
 The graph has **N** nodes named/numbered from **0** to **N - 1**.
 Beside node number/name, each node has a *component number* with it. A *component number* is like a name for a component. So, all nodes in the same component should have the same *component number*.
+
 You can set *component number* of a node by using the function **UndirectedGraph::setComponentNumberOfNode(int u, int componentNumber)**. Check **ExampleUsage.h** for more.
+
 Also, initially, component number of all nodes is -1 indicating that they're not in a component yet.
 
 **Hint**: You can use component number as a visited/explored array. If a node is not in a component yet (i.e., its component number is -1), it's not visited yet.
