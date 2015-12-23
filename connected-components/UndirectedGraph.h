@@ -14,9 +14,9 @@ public:
     int getN();
 
     // Instead of dealing with `adjacency matrix` directly, use these following functions:
-    void setEdgeBetween(int u, int v);			// sets edge between Node u and Node v.
-    bool isThereEdgeBetween(int u, int v);	    // Is there an edge between Node u and Node v?. Same as saying `adjMat[u][v]`
-    vector<int> getNeighboursOf(int u);	        // Returns neighbours of Node u.
+    void setEdgeBetween(int u, int v);          // sets edge between Node u and Node v.
+    bool isThereEdgeBetween(int u, int v);      // Is there an edge between Node u and Node v?. Same as saying `adjMat[u][v]`
+    vector<int> getNeighboursOf(int u);         // Returns neighbours of Node u.
 
 
     // Component number Can be anything other than -1. "-1" indicates that node is not in a component yet.
@@ -34,12 +34,17 @@ public:
 private:
     // private members are prefixed with "_"
 
-    int _N;							            // number of nodes
-    vector<vector<bool> > _adjMat;	            // adjacency matrix
+    int _N;                                     // number of nodes
+    vector<vector<bool> > _adjMat;              // adjacency matrix
     vector<int> _componentNumberOfNode;         // component number of node.
     void _makeSureNodeNumberIsValid(int u);     // To help catch bugs. All nodes must be from 0 to N - 1
 };
 
+
+
+//========================================================================================
+// You do NOT need to read the implementation! Just know how to call the public functions!
+//========================================================================================
 
 
 UndirectedGraph::UndirectedGraph(int N) {
