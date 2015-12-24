@@ -1,24 +1,27 @@
-#include "ConnectedComponents.h"
-#include "UndirectedGraph.h"
+#include "DirectedGraph.h"
+#include "Kosaraju.h"
 #include "ExampleUsage.h"
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
 
-    // Check this function for an example on how to use `UndirectedGraph` and for what your code should do.
-    // exampleUsage();
+    // Check this function for an example on how to use `DirectedGraph` and for what your code should do.
+    directedGraphExampleUsage();
+
+    // Check this function for an example on how to use Kosaraju Helper functions
+    helperFunctionsExampleUsage();
 
     // Comment this line to take input from console.
-    freopen("inputExample.txt", "r", stdin);
+    freopen("kosarajuInputExample.txt", "r", stdin);
 
-    UndirectedGraph G = inputGraph();
+    DirectedGraph G = inputGraph();
 
-    markComponentsOfNodes(G);
+    Kosaraju(G);
 
-    // If you code is correct, all nodes in the same component should have the same component number.
-    // For now, since `markComponentsOfNodes` does nothing, all nodes don't have a component yet.
-    cout << "After running your code on the input:" << endl;
+    // If your code is correct, all nodes in the same component should have the same component number.
+    // For now, since `Kosaraju(G)` does nothing, all nodes don't have a component yet.
+    cout << "After running your code (which currently does nothing) on the input graph:" << endl;
     G.printComponentNumbersOfNodes();
 
     return 0;
